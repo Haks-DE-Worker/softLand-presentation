@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.product-card:hover {
+    transform: translateY(-15px); /* Décalage vers le haut */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée pour plus de profondeur */
+}
+/* @media screen and (max-width: 1200px) {
+    .product-card{
+        padding-bottom: 10px;
+    }
+    
+    } */
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.short-description {
+    padding: 0 15px;
+    color: #555;
+}
+
+.read-more-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 16px 0;
+}
+
+.header-produit{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.introduction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 60%;
+    font-size: large;
+}
+
+.trait{
+    content: "";
+    width: 70%;
+    height: 0.2rem;
+    /* background-color: #0d6efd; */
+    background-color: #2579aa;
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .introduction{
+        width: 75%;
+    }
+  
+    
+    }
+
+    @media screen and (min-width: 992px) {    
+        .collapse.scoperfect{
+        margin: 30px 0;
+    }
+    
+    }
+    @media screen and (max-width: 993px) {
+        .header-produit{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 70px;
+        }
+        .introduction{
+           
+            width: 100%;
+            text-align: justify;
+        }
+        .container-fluid{
+            padding-top: 0px;
+            margin-top: 0px;
+        }
+        
+        }
